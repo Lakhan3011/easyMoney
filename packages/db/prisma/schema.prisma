@@ -32,7 +32,7 @@ enum AuthType {
 model OnRampTransaction {
   id Int @id @default(autoincrement())
   status OnRampStatus
-  token String
+  token String @unique
   provider String
   amount Int
   startTime DateTime
